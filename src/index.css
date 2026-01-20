@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Navbar improvements */
+.navbar {
+  min-height: 64px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  padding: 8px 0 !important;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbar-nav .nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav .nav-link {
+  color: #333 !important;
+  transition: color 0.2s;
+  white-space: nowrap;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #387ed1 !important;
+}
+
+
+.navbar-collapse {
+  display: flex !important;
+  flex-basis: auto !important;
+}
+
+.navbar-toggler {
+  border: 1px solid #e0e0e0 !important;
+  padding: 4px 8px !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.1rem rgba(56, 126, 209, 0.25) !important;
+}
+
+/* Dropdown improvements */
+.dropdown-menu {
+  min-width: 180px;
+  padding: 8px 0;
+}
+
+.dropdown-item {
+  padding: 10px 16px;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.dropdown-item:hover {
+  background-color: #f5f5f5;
+}
+
+.dropdown-item:active {
+  background-color: #e5e5e5;
+}
+
+/* Ensure navbar doesn't hide on mobile */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    margin-top: 16px;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 16px;
+  }
+  
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start !important;
+    width: 100%;
+  }
+  
+  .navbar-nav .nav-item {
+    width: 100%;
+    margin: 4px 0;
+  }
+  
+  .navbar-nav .nav-link {
+    width: 100%;
+    padding: 10px 16px !important;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.nav-link{
+  margin-left: 40px;
+}
+
+#supportHero{
+  background-color: rgb(56, 126, 209);
+  color: white;
+}
+
+#supportHero a{
+  color: white;
+}
+
+#supportWrapper{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 150px;
+}
+
+#supportHero input{
+  padding: 20px 50px;
+  width: 100%;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+}
