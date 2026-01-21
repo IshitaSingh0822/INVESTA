@@ -18,10 +18,12 @@ function Signup() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setError("");
-    setLoading(true);
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  console.log("Signup API URL:", `${API_BASE_URL}/signup`);
+
+  await axios.post(`${API_BASE_URL}/signup`, formData);
+};
 
     try {
       await axios.post(
